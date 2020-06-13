@@ -4,13 +4,15 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "build": "ng build --prod --build-optimizer=false"
   },
   "private": true,
   "dependencies": {
+    "@amcharts/amcharts4": "^4.9.24",
+    "@amcharts/amcharts4-geodata": "^4.1.15",
     "@angular/animations": "~9.1.7",
     "@angular/common": "~9.1.7",
     "@angular/compiler": "~9.1.7",
@@ -19,17 +21,19 @@
     "@angular/platform-browser": "~9.1.7",
     "@angular/platform-browser-dynamic": "~9.1.7",
     "@angular/router": "~9.1.7",
+    "bootstrap": "^4.5.0",
+    "jquery": "^3.5.1",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~0.901.6",
+    "@angular-devkit/build-angular": "^0.901.7",
     "@angular/cli": "~9.1.6",
     "@angular/compiler-cli": "~9.1.7",
-    "@types/node": "^12.11.1",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
+    "@types/node": "^12.11.1",
     "codelyzer": "^5.1.2",
     "jasmine-core": "~3.5.0",
     "jasmine-spec-reporter": "~4.2.1",

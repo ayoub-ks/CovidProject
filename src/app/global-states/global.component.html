@@ -1,0 +1,123 @@
+<div class="container" style="background: #1d1919; border-radius: 10px;">
+  <!-- Jumbtron/CasesNumber-->
+  <div
+    class="jumbotron text-center"
+    style="background: #c7a29f; border-radius: 20px;"
+  >
+    <h1 class="display-3">
+      Coronaviruse <span style="color: #ea8685;">Cases </span>in the World
+    </h1>
+    <hr class="my-2" />
+
+    <!--cases cards-->
+    <div *ngIf="isFetch && !error">
+      <div class="row"></div>
+      <div class="d-flex justify-content-center">
+        <div class="spinner-grow text-primary" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-warning" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-success" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-danger" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+      </div>
+    </div>
+    <div class="alert alert-danger" *ngIf="error">
+      <h1>An Error Occurred !</h1>
+      <p>{{ error }}</p>
+    </div>
+
+    <div class="row" *ngIf="!isFetch">
+      <div class="col-sm-12">
+        <br />
+      </div>
+      <div class="col-l-4 col-md-4">
+        <div class="card bg-primary text-white mb-4">
+          <div class="card-body">Confirmed: {{ totalConfirmed }}</div>
+          <div
+            class="card-footer d-flex align-items-center justify-content-between"
+          >
+            <a
+              class="small text-white stretched-link"
+              data-toggle="collapse"
+              href="#collapseExample0"
+              aria-expanded="false"
+              aria-controls="collapseExample0"
+              >View Details</a
+            >
+
+            <div class="small text-white">
+              <i class="fas fa-angle-right"></i>
+            </div>
+          </div>
+          <div class="collapse" id="collapseExample0">
+            last data update : <br />{{ date[0] }} at : {{ date[1] }}
+          </div>
+        </div>
+      </div>
+
+      <div class="col-l-4 col-md-4">
+        <div class="card bg-success text-white mb-4">
+          <div class="card-body">Recovered :{{ totalRecovered }}</div>
+          <div
+            class="card-footer d-flex align-items-center justify-content-between"
+          >
+            <a
+              class="small text-white stretched-link"
+              data-toggle="collapse"
+              href="#collapseExample2"
+              aria-expanded="false"
+              aria-controls="collapseExample2"
+              >View Details</a
+            >
+
+            <div class="small text-white">
+              <i class="fas fa-angle-right"></i>
+            </div>
+          </div>
+          <div class="collapse" id="collapseExample2">
+            last data update : <br />{{ date[0] }} at : {{ date[1] }}
+          </div>
+        </div>
+      </div>
+      <div class="col-l-4 col-md-4">
+        <div class="card bg-danger text-white mb-4">
+          <div class="card-body">Deaths :{{ totalDeaths }}</div>
+          <div
+            class="card-footer d-flex align-items-center justify-content-between"
+          >
+            <a
+              class="small text-white stretched-link"
+              data-toggle="collapse"
+              href="#collapseExample3"
+              aria-expanded="false"
+              aria-controls="collapseExample3"
+              >View Details</a
+            >
+
+            <div class="small text-white">
+              <i class="fas fa-angle-right"></i>
+            </div>
+          </div>
+          <div class="collapse" id="collapseExample3">
+            last data update : <br />{{ date[0] }} at : {{ date[1] }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="jumbotron text-center"
+    style="background: #ecf0f1; border-radius: 20px;"
+  >
+    <h2>Cases for every country :</h2>
+    <br />
+    <app-coutries></app-coutries>
+  </div>
+  <div style="margin-top: auto;"></div>
+</div>

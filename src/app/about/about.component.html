@@ -1,0 +1,308 @@
+<!--- Image Slider -->
+<div class="container">
+  <div
+    id="myCarousel"
+    class="carousel slide my-0"
+    data-interval="3000"
+    data-ride="carousel"
+  >
+    <!-- Carousel indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class=""></li>
+      <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+      <li data-target="#myCarousel" data-slide-to="3" class=""></li>
+    </ol>
+    <!-- Wrapper for carousel items -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{{ slide3 }}" alt="First Slide" />
+      </div>
+      <div class="carousel-item">
+        <img src="{{ slide2 }}" alt="First Slide" />
+      </div>
+      <div class="carousel-item">
+        <img src="{{ slide1 }}" alt="First Slide" />
+      </div>
+      <div class="carousel-item">
+        <img src="{{ slide4 }}" alt="First Slide" />
+      </div>
+    </div>
+    <!-- Carousel controls -->
+    <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+  <!--- Jumbotron -->
+  <div class="container-fluid">
+    <div class="row jumbotron">
+      <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+        <p class="lead">
+          Coronaviruses are a large family of viruses that cause respiratory
+          infections. These can range from the common cold to more serious
+          diseases.
+        </p>
+
+        <div id="more" class="collapse">
+          <p class="lead">
+            Most people infected with the COVID-19 virus will experience mild to
+            moderate respiratory illness and recover without requiring special
+            treatment. Older people, and those with underlying medical problems
+            like cardiovascular disease,diabetes, chronic respiratory disease,
+            and cancer are more likely to develop serious illness.
+          </p>
+          <p class="lead">
+            The COVID-19 virus spreads primarily through droplets of saliva or
+            discharge from the nose when an infected person coughs or sneezes,
+            so it’s important that you also practice respiratory etiquette (for
+            example, by coughing into a flexed elbow).
+          </p>
+          <p class="lead">
+            At this time, there are no specific vaccines or treatments for
+            COVID-19. However, there are many ongoing clinical trials evaluating
+            potential treatments. WHO will continue to provide updated
+            information as soon as clinical findings become available.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+        <button
+          type="button"
+          class="btn btn-outline-secondary btn-lg collapsed"
+          data-target="#more"
+          data-toggle="collapse"
+          aria-expanded="false"
+        >
+          Looking for more...
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--- Two Column Section -->
+<div class="container-fluid padding">
+  <div class="row padding">
+    <div class="col-lg-6">
+      <h2 class="text-center" style="color: #c44569;">
+        How does coronavirus (COVID-19) spread?
+      </h2>
+      <hr class="my-2" />
+      <p class="lead">The virus can spread from person to person through:</p>
+      <p class="lead" style="color: darkblue;">
+        <i class="fas fa-bahai"></i> close contact with an infectious person
+        (including in the 48 hours before they had symptoms)
+      </p>
+      <p class="lead" style="color: darkblue;">
+        <i class="fas fa-bahai"></i> contact with droplets from an infected
+        person’s cough or sneeze
+      </p>
+      <p class="lead" style="color: darkblue;">
+        <i class="fas fa-bahai"></i> touching objects or surfaces (like
+        doorknobs or tables) that have droplets from an infected person, and
+        then touching your mouth or face
+      </p>
+      <p class="lead my-2">
+        COVID-19 is a new disease, so there is no existing immunity in our
+        community. This means that COVID-19 could spread widely and quickly.
+      </p>
+      <br />
+    </div>
+    <div class="col-lg-6">
+      <img src="{{ corona1 }}" alt="desk" class="img-fluid" />
+    </div>
+  </div>
+</div>
+<!--- Fixed background -->
+<figure>
+  <div class="fixed-wrap">
+    <div id="fixed"></div>
+  </div>
+</figure>
+<hr class="my-4" />
+<!--- Cards -->
+<div class="container-fluid padding">
+  <div class="row padding">
+    <div class="col-md-4">
+      <div class="card">
+        <img class="card-img-top" src="{{ covid1 }}" alt="" />
+        <div class="card-body">
+          <h4 class="card-title text-center" style="color: #303952;">
+            <i class="fas fa-hands-wash"></i> Wash your hands often
+          </h4>
+          <p class="card-text">
+            Wash your hands often with soap and water for at least 20 seconds
+            especially after you have been in a public place, or after blowing
+            your nose, coughing, or sneezing.
+          </p>
+          <p class="card-text">
+            If soap and water are not readily available, use a hand sanitizer
+            that contains at least 60% alcohol. Cover all surfaces of your hands
+            and rub them together until they feel dry.
+          </p>
+          <p class="card-text">
+            Avoid touching your eyes, nose, and mouth with unwashed hands.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img class="card-img-top" src="{{ covid }}" alt="" />
+        <div class="card-body">
+          <h4 class="card-title text-center" style="color: #303952;">
+            <i class="fas fa-people-arrows"></i> Avoid close contact
+          </h4>
+          <p class="card-text">
+            Avoid close contact with people who are sick, even inside your home.
+            If possible, maintain 6 feet between the person who is sick and
+            other household members.
+          </p>
+          <p class="card-text">
+            Put distance between yourself and other people outside of your home.
+          </p>
+          <ul>
+            <li>
+              Stay at least 6 feet (about 2 arms’ length) from other people.
+            </li>
+            <li>Do not gather in groups.</li>
+            <li>
+              Keeping distance from others is especially important for people
+              who are at higher risk of getting very sick.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img class="card-img-top" src="{{ covid11 }}" alt="" />
+        <div class="card-body">
+          <h4 class="card-title text-center" style="color: #303952;">
+            <i class="fas fa-head-side-mask"></i> Cover your mouth and nose with
+            a cloth face cover when around others
+          </h4>
+          <p class="card-text">
+            You could spread COVID-19 to others even if you do not feel sick.
+          </p>
+          <p class="card-text">
+            Everyone should wear a cloth face cover when they have to go out in
+            public, for example to the grocery store or to pick up other
+            necessities.
+          </p>
+          <p class="card-text">
+            Cloth face coverings should not be placed on young children under
+            age 2, anyone who has trouble breathing, or is unconscious,
+            incapacitated or otherwise unable to remove the mask without
+            assistance.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid padding my-0">
+  <div class="row padding">
+    <div class="col-md-4">
+      <div class="card">
+        <img class="card-img-top" src="{{ covid111 }}" alt="" />
+        <div class="card-body">
+          <h4 class="card-title text-center" style="color: #303952;">
+            <i class="fas fa-head-side-cough-slash"></i> Cover coughs and
+            sneezes
+          </h4>
+          <p class="card-text">
+            If you are in a private setting and do not have on your cloth face
+            covering, remember to always cover your mouth and nose with a tissue
+            when you cough or sneeze or use the inside of your elbow.
+          </p>
+          <p class="card-text">
+            Immediately wash your hands with soap and water for at least 20
+            seconds. If soap and water are not readily available, clean your
+            hands with a hand sanitizer that contains at least 60% alcohol.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img class="card-img-top" src="{{ covid1111 }}" alt="" />
+        <div class="card-body">
+          <h4 class="card-title text-center" style="color: #303952;">
+            <i class="fas fa-pump-soap"></i> Clean and disinfect
+          </h4>
+          <p class="card-text">
+            Clean AND disinfect frequently touched surfaces daily. This includes
+            tables, doorknobs, light switches, countertops, handles, desks,
+            phones, keyboards, toilets, faucets, and sinks.
+          </p>
+          <p class="card-text">
+            If surfaces are dirty, clean them. Use detergent or soap and water
+            prior to disinfection.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img class="card-img-top" src="{{ covid11111 }}" alt="" />
+        <div class="card-body">
+          <h4 class="card-title text-center" style="color: #303952;">
+            <i class="fas fa-hospital-user"></i> Monitor Your Health
+          </h4>
+          <p class="card-text">
+            Be alert for symptoms. Watch for fever, cough, shortness of breath,
+            or other symptoms of COVID-19.
+          </p>
+          <p class="card-text">
+            Especially important if you are running essential errands, going
+            into the office or workplace, and in settings where it may be
+            difficult to keep a physical distance of 6 feet
+          </p>
+          <p class="card-text">
+            Take your temperature if symptoms develop. Don’t take your
+            temperature within 30 minutes of exercising or after taking
+            medications that could lower your temperature, like acetaminophen.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<hr class="my-2" />
+<!--- Two Column Section -->
+<div class="container-fluid padding">
+  <div class="row padding">
+    <div class="col-lg-6">
+      <img src="{{ corona2 }}" alt="desk" class="img-fluid img-thumbnail" />
+    </div>
+    <div class="col-lg-6">
+      <h2 class="text-center" style="color: #c44569; font-size: x-large;">
+        Symptoms:
+      </h2>
+      <p class="lead">
+        Symptoms of COVID-19 can range from mild illness to pneumonia. Some
+        people will recover easily, and others may get very sick very quickly.
+        People with coronavirus may experience symptoms such as:
+      </p>
+      <p class="lead">
+        <span style="font-weight: 200;">
+          fever, respiratory symptoms(coughing - sore throat - shortness of
+          breath)</span
+        >
+      </p>
+      <p class="lead">
+        Other symptoms can include runny nose, headache, muscle or joint pains,
+        nausea, diarrhoea, vomiting, loss of sense of smell, altered sense of
+        taste, loss of appetite and fatigue.
+      </p>
+      <p class="lead">
+        To stop the spread of COVID-19 people with even mild symptoms of
+        respiratory infection are encouraged to get tested.
+      </p>
+    </div>
+  </div>
+</div>

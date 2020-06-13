@@ -1,0 +1,22 @@
+/*--footer--*/
+footer {
+  width: 100%;
+  background-color: #2c3e50;
+  padding: 5px 5px 10px 5px;
+  color: #fff;
+}
+.logo {
+  max-width: 300px;
+}
+hr.light {
+  border-top: 1px solid #d5d5d5;
+  width: 75%;
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+}
+hr.light-100 {
+  border-top: 1px solid #d5d5d5;
+  width: 100%;
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+}

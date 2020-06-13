@@ -1,0 +1,14 @@
+#chartdiv {
+  width: 100%;
+  height: 500px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -0.75rem;
+  margin-left: -0.75rem;
+}
+
+h1 {
+  text-align: center;
+}
